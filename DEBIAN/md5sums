@@ -1,0 +1,12 @@
+ae5004ad243afec11117a5288944d603  DEBIAN/postrm
+acda6c8ddbdfe641125e4594af600b63  DEBIAN/preinst
+d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
+7b8c1827eff41e259d58d3ffc96110bf  DEBIAN/languages
+10e5e4b546785e66c743b38ae3a01e63  DEBIAN/es.po
+a3a48fb55bbb96eda6643edb74197811  DEBIAN/big-umount-tweaks.pot
+2b33571c9a7c1653b8379729dc4510ec  DEBIAN/pt.po
+5ad9a7a52de3c3f952ce4d4ae964712f  DEBIAN/pt.mo
+62ba10eb7d9794fc704657e5980a894a  DEBIAN/control
+d981691e2de169116505ea396a5b1871  usr/bin/lsof
+5ad9a7a52de3c3f952ce4d4ae964712f  usr/share/locale/pt/LC_MESSAGES/big-umount-tweaks.mo
+d454f9a3b08eb0d6aebafa9c8a31d29b  usr/share/locale/es/LC_MESSAGES/big-umount-tweaks.mo

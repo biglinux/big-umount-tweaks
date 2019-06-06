@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=big-umount-tweaks
+
+DESC=$"The following programs are using this device, do you want to proceed with the removal?"
+
+#Remove o -t e depois verifica no /etc/mtab o endereco do dispositivo no /dev
+PART="$(grep "$(echo "$*" | sed 's|-t ||g')" /etc/mtab | cut -f1 -d" ")"
+windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
+
+
+if [ -e "/usr/bin/kdialog" ] && [ "$(ps -p $(ps -p $(echo $$) -o ppid=) | grep plasmashell)" != "" ] && [ "$(lsof.distrib "$PART" | sed 1d | cut -d' ' -f1)" != "" ]; then
+
+    #Diálogo com botões sim e não para escolher
+    kdialog --attach "$windowID" --title $"Force ejection" --yesno "$DESC
+
+$(lsof.distrib  /dev/sde1 | sed 1d | tr -s ' ' | cut -d' ' -f1,9-15 | sed 's| /|  -  |g')"
+
+    if [ "$?" -ne 1 ]; then
+        sync
+        udisksctl unmount -f -b "$PART"
+        if [ "$(udisksctl unmount -f -b "$PART" 2>&1 | grep -e "not mounted" -e "Error looking up")" != "" ]; then
+            kdialog --attach "$windowID" --msgbox $"The device has been ejected from the system, and can be safely removed!"
+        fi
+
+
+    fi
+
+else
+    lsof.distrib $*
+fi
+        

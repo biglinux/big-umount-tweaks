@@ -1,0 +1,10 @@
+Package: big-umount-tweaks
+Version: 1.1.0-1biglinux1
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Installed-Size:48
+Depends: sed 
+Section: admin
+Priority: optional
+Description: Move /usr/bin/lsof to /usr/bin/lsof.distrib and add shellscript /usr/bin/lsof to force umount if device in use. \n Move o /usr/bin/lsof para /usr/bin/lsof.distrib e adiciona o script /usr/bin/lsof para desmontar forcadamente dispositivos em uso.
+

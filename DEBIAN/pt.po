@@ -1,0 +1,33 @@
+# Portuguese translations for big-umount-tweaks package.
+# Copyright (C) 2019 THE big-umount-tweaks'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the big-umount-tweaks package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: big-umount-tweaks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-16 17:24-0300\n"
+"PO-Revision-Date: 2019-04-16 17:24-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+
+msgid ""
+"The following programs are using this device, do you want to proceed with "
+"the removal?"
+msgstr ""
+"Os programas a seguir estão utilizando este dispositivo, deseja prosseguir "
+"com a remoção?"
+
+msgid "Force ejection"
+msgstr "Forçar ejeção"
+
+msgid "The device has been ejected from the system, and can be safely removed!"
+msgstr ""
+"O dispositivo foi ejetado do sistema, e pode ser removido com segurança!"
