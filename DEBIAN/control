@@ -2,7 +2,7 @@ Package: big-umount-tweaks
 Version: 1.1.0-1biglinux1
 Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
-Installed-Size:48
+Installed-Size:308
 Depends: sed 
 Section: admin
 Priority: optional
